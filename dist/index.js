@@ -99,7 +99,7 @@ async function startServer() {
                 res.end(resHTML);
             }
         });
-        app.listen(3000);
+        app.listen(process.env.PORT || 3000);
     }
     catch (error) {
         console.error(error);
