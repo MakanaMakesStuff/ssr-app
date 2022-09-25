@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "engines": {
+    "node": "14.19.1"
+  },
   "devDependencies": {
     "@types/express": "^4.17.14",
     "@types/glob": "^8.0.0",
