@@ -6,4 +6,5 @@ https://vue-ssr-makri.herokuapp.com/test
 
 
 #### package.json scripts(removed to push to heroku)
+
 	"build": "rm -rf dist && tsc"
