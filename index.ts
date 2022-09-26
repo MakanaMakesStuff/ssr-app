@@ -57,7 +57,7 @@ export async function startServer() {
 
   const basename = "pages"
 
-  const routes = Object.values(glob.sync("src/pages/*.tsx")).map((url) => {
+  const routes = Object.values(glob.sync("**/src/pages/*")).map((url) => {
     const name = url.slice(
       url.indexOf(basename) + basename.length,
       url.indexOf(".")
