@@ -82,12 +82,12 @@ async function startServer() {
     try {
         const app = (0, app_1.createApp)();
         const basename = "pages";
-        const routes = Object.values(glob_1.default.sync("**/pages/*")).map((url) => {
+        const routes = Object.values(glob_1.default.sync("src/pages/*.tsx")).map((url) => {
             const name = url.slice(url.indexOf(basename) + basename.length, url.indexOf("."));
             return name === "/index" ? "/" : name;
         });
         app.use(routes, async (req, res) => {
-            const url = path_1.default.resolve(__dirname, `${basename}${req.originalUrl === "/" ? "/index" : req.originalUrl}`);
+            const url = path_1.default.resolve(__dirname, `src/${basename}${req.originalUrl === "/" ? "/index" : req.originalUrl}.tsx`);
             const module = await Promise.resolve().then(() => __importStar(require(url)));
             if (module) {
                 const def = module.default();

@@ -22,11 +22,15 @@ var __importStar = (this && this.__importStar) || function (mod) {
     __setModuleDefault(result, mod);
     return result;
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = __importStar(require("react"));
+const index_scss_1 = __importDefault(require("@vue-ssr/src/assets/scss/index.scss"));
 function IndexPage() {
     return (React.createElement(React.Fragment, null,
-        React.createElement("h1", null, "Welcome to the Home Page!!")));
+        React.createElement("h1", { className: index_scss_1.default.main }, "Welcome to the Home Page!!")));
 }
 exports.default = IndexPage;
 //# sourceMappingURL=index.js.map

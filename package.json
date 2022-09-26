@@ -11,18 +11,23 @@
     "@types/glob": "^8.0.0",
     "@types/node": "^18.7.21",
     "@types/react": "^18.0.21",
+    "@types/sass": "^1.43.1",
+    "scss": "^0.2.4",
     "ts-node": "^10.9.1",
     "tsconfig-paths": "^4.1.0",
     "typescript": "^4.8.3"
   },
   "scripts": {
     "dev": "ts-node index.ts",
-    "start": "node ./dist/index.js"
+    "start": "node ./dist/index.js",
+    "build": "rm -rf dist && tsc && yarn sass",
+    "sass": "sass --watch src/assets/scss:dist/assets/css"
   },
   "dependencies": {
     "express": "^4.18.1",
     "glob": "^8.0.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "sass": "^1.55.0"
   }
 }

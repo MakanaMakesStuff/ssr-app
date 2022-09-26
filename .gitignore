@@ -4,6 +4,8 @@
 !README.md
 !package.json
 !index.html
+!public/
+!public/*
 
 !dist/
 !dist/*
