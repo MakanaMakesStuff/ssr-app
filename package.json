@@ -19,9 +19,7 @@
   },
   "scripts": {
     "dev": "ts-node index.ts",
-    "start": "node ./dist/index.js",
-    "build": "rm -rf dist && tsc && yarn sass",
-    "sass": "sass --watch src/assets/scss:dist/assets/css"
+    "start": "node ./dist/index.js"
   },
   "dependencies": {
     "express": "^4.18.1",
