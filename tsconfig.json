@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "baseUrl": "./",
+    "outDir": "dist",
+    "lib": ["DOM", "ESNext"],
+    "jsx": "react",
+    "skipDefaultLibCheck": true,
+    "sourceMap": true,
+    "paths": {
+      "@vue-ssr/*": ["./*"]
+    }
+  },
+
+  "include": ["*.ts", "**/*.ts", "*.tsx", "**/*.tsx", "**/*.css"],
+  "ts-node": {
+    "require": ["tsconfig-paths/register"],
+    "transpileOnly": true,
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  }
+}
